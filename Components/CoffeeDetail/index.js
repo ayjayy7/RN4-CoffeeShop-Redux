@@ -93,7 +93,11 @@ class CoffeeDetail extends Component {
               </Picker>
             </Body>
           </ListItem>
-          <Button full danger>
+          <Button
+            full
+            danger
+            onPress={() => this.props.addItemToCart(this.state)}
+          >
             <Text>Add</Text>
           </Button>
         </List>

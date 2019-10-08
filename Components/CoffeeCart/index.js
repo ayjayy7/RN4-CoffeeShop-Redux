@@ -16,10 +16,14 @@ class CoffeeCart extends Component {
       ));
     }
 
+    const handlePress = () => {
+      //msg
+    };
+
     return (
       <List>
         {cartItems}
-        <Button full danger>
+        <Button full danger onPress={() => handlePress()}>
           <Text>Checkout</Text>
         </Button>
       </List>
